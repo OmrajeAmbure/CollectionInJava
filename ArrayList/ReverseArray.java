@@ -28,6 +28,7 @@ public class ReverseArray {
                     end--;
                 }
             }
+
             for (int i:arr){
                 System.out.print(i);
             }
