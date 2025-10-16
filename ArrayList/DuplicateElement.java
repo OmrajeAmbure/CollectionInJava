@@ -9,6 +9,9 @@ public class DuplicateElement {
             ArrayList<Integer> ans = new ArrayList<>();
             /**
              *  Adds the specified element to this set if it is not already present
+             *  Note :-  backed by a hash table (actually a HashMap instance). It makes no guarantees as to the iteration order of the set; in particular, it does not guarantee that the order will remain constant over time.
+             *   Time complexity ---> O(n)
+             *   Space complexity ----> O(n)
              **/
             for (int i:arr){
                 if (set.add(i) != true){
@@ -24,6 +27,8 @@ public class DuplicateElement {
          *    3.  if  arr[outerLoop] == arr[innerLoop ] ans.add(arr[outerLoop])
          *    4. continue until all duplicate are stored in ans
          *    5. return the ans
+         *    Time complexity ---> O(n^2)
+         *    Space complexity ----> O(n)
         **/
         public static ArrayList<Integer> findDuplicatesNative(int[] arr) {
         // code here
